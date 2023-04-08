@@ -1,0 +1,118 @@
+body {
+  background-color: #222;
+  color: #fff;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: #181818;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 36px;
+}
+
+form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+  transform-origin: left bottom;
+  color: white;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3e3e3e;
+  color: white;
+  transition: all 0.3s ease-in;
+}
+
+input:hover {
+  background-color: #535353;
+}
+
+input:hover::placeholder {
+  color: #919191;
+  transition: all 0.3s ease-in;
+}
+
+input:focus::placeholder {
+  transition: all 0.3s ease-in;
+  color:white;
+}
+
+input:focus {
+  background-color: #3e3e3e;
+  outline: none;
+}
+
+button {
+  width: 105%;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+.loading-container {
+  margin-top: 20px;
+  display: none;
+}
+
+.loading-icon {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s ease-in-out infinite;
+  margin: 0 auto;
+}
+
+#output-container {
+  display: none;
+  width: 102%;
+  background-color: #3e3e3e;
+  min-height: 100px;
+  text-align: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 8px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
